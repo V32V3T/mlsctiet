@@ -1,0 +1,90 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: #0d1213;
+  color: white;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.maincontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.leftcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.leftcontainer img {
+  margin: 20px;
+  width: 480px;
+}
+
+.leftcontainer h2 {
+  font-size: 90px;
+  font-weight: bolder;
+  margin: 20px;
+}
+
+.rightcontainer {
+  margin: 0 20px;
+  padding: 0 20px;
+  font-size: 25px;
+  width: 50%;
+}
+
+.rightcontainer ul {
+  padding: 0;
+}
+
+/* button {
+  background-color: transparent;
+  border: white 2px solid;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+} */
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #00cdbc;
+  border: #0d1213;
+}
+
+button:hover a {
+  color: black;
+}
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+  .maincontainer {
+    margin-top: auto;
+    flex-direction: column;
+    padding: 0 10vw;
+  }
+  .leftcontainer {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .rightcontainer {
+    width: 100%;
+  }
+}

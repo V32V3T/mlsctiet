@@ -1,5 +1,5 @@
 import AboutUs from "./Pages/AboutUs";
-import Alumni from "./Pages/Alumni";
+import Alumnis from "./Pages/Alumni";
 import Community from "./Pages/Community";
 import Events from "./Pages/Events";
 import Gallery from "./Pages/Gallery";
@@ -10,6 +10,10 @@ import Sponsors from "./Pages/Sponsors";
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Years from "./Pages/Alumni/Components/Years";
+import PolaroidGrid from "./Pages/Alumni/PolaroidGrid";
+import Alumni from "./Pages/Alumni/Components/alumni";
+import Main from "./Pages/Alumni/Main";
 
 function App() {
   return (
@@ -24,7 +28,10 @@ function App() {
         <Route path="/team" element={<OurTeam />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/sponsors" element={<Sponsors />} />
-        <Route path="/alumni" element={<Alumni />} />
+        <Route path="/alumni" element={<Alumnis />}>
+          <Route index element={<Main />} />
+          <Route path=":year" element={<PolaroidGrid />} />
+        </Route>
       </Routes>
     </Router>
   );

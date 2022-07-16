@@ -1,0 +1,7 @@
+button {
+  color: white;
+  display: block;
+  transform: rotate(-90deg);
+  padding: 2em;
+  place-items: right;
+}
