@@ -10,10 +10,11 @@ import Sponsors from "./Pages/Sponsors";
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Years from "./Pages/Alumni/Components/Years";
 import PolaroidGrid from "./Pages/Alumni/PolaroidGrid";
-import Alumni from "./Pages/Alumni/Components/alumni";
 import Main from "./Pages/Alumni/Main";
+import Project1 from "./Pages/Projects/Components/Project1/Project1";
+import Project2 from "./Pages/Projects/Components/Project2/Project2";
+import Project3 from "./Pages/Projects/Components/Project3/Project3";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/team" element={<OurTeam />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/project1" element={<Project1 />} />
+        <Route path="/project2" element={<Project2 />} />
+        <Route path="/project3" element={<Project3 />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/alumni" element={<Alumnis />}>
           <Route index element={<Main />} />
