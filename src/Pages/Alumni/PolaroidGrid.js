@@ -28,17 +28,21 @@ const PolaroidGrid = () => {
       <div className={PolaroidGridCSS.container}>
         <div className={PolaroidGridCSS.mainContainer} id="rectangle">
           <div className={PolaroidGridCSS.firstContainer}>
-            <img src={Circles}></img>
-            <img src={Lines}></img>
+            <div className={PolaroidGridCSS.Circles}>
+              <img src={Circles}></img>
+            </div>
             <h1>{items[0].year}</h1>
+            <img src={Lines}></img>
           </div>
-          {items.map((items, index) => {
-            return (
-              <div key={index}>
-                <Polaroid items={items} />
-              </div>
-            );
-          })}
+          <div className={PolaroidGridCSS.secondContainer}>
+            {items.map((items, index) => {
+              return (
+                <div key={index} className={PolaroidGridCSS.items}>
+                  <Polaroid items={items} />
+                </div>
+              );
+            })}
+          </div>
         </div>
         <div className={PolaroidGridCSS.thirdContainer}>
           <Years filterPolaroids={filterPolaroids} yearItems={yearItems} />
