@@ -37,27 +37,24 @@
   transform: rotate(-90deg);
 }
 
-.Circles{
-  
-  
+.Circles {
 }
 
-.secondContainer{
-    display: flex;
-    flex-direction: row;
-    /* align-items: center; */
-    flex-wrap: wrap;
-    /* margin-left: 2.5%; */
-    Width: 75%;
-    Height: 90%;
-    background: rgb(150, 67, 75);
-    border-radius: 2rem;
-    overflow-y: scroll;
+.secondContainer {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  /* margin-left: 2.5%; */
+  width: 75%;
+  height: 90%;
+  background: rgb(150, 67, 75);
+  border-radius: 2rem;
+  overflow-y: scroll;
 }
 
-.items{
+.items {
   padding-left: 1.5rem;
-  
 }
 
 .thirdContainer {

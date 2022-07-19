@@ -11,8 +11,7 @@ const Years = ({ filterPolaroids, yearItems }) => {
       {yearItems.map((curElem, index) => {
         return (
           <button
-            className={StyleButton.button}
-            id="btn"
+            className={StyleButton.buttons}
             key={index}
             onClick={() => {
               filterPolaroids(curElem);
