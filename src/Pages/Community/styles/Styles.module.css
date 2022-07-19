@@ -59,17 +59,17 @@
   cursor: pointer;
 } */
 
-button a {
+.join-button a {
   color: white;
   text-decoration: none;
 }
 
-button:hover {
+.join-button:hover {
   background-color: #00cdbc;
   border: #0d1213;
 }
 
-button:hover a {
+.join-button:hover a {
   color: black;
 }
 
