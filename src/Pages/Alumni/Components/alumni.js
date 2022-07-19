@@ -216,14 +216,14 @@ const Alumni = [
   {
     id: 31,
     year: 2016,
-    image: { Image },
+    image: {Image},
     name: "xyz",
     linkedIn: "https://www.linkedin.com/",
   },
   {
     id: 32,
     year: 2016,
-    image: { Image },
+    image: {Image},
     name: "xyz",
     linkedIn: "https://www.linkedin.com/",
   },

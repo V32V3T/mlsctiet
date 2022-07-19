@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-/* .rectangle {
+/*.rectangle {
   display: flex;
   height: 100em;
   align-content: center;
@@ -14,8 +14,8 @@
   gap: 10px;
   padding: 10px;
   flex-wrap: wrap;
-} */
-
+} 
+*/
 .container {
   width: 100vw;
   height: 100vh;
